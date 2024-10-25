@@ -1,0 +1,27 @@
+
+/* <!-- GOOGLE FONTS------ --> */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* VARIABLES DE COLORES */
+:root {
+    --dark__pink: #B74140;
+    --pink: #FA6674;
+    --light__pink: #FCB6BC;
+    --white: #FDFFFE;
+    --beige: #FBE9CB;
+    --caramel: #F0BF87;
+}
+
+
+/* SELECTORES GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EB Garamond", serif;
+    scroll-behavior: smooth;
+    background-color: #B74140;
+}
+
