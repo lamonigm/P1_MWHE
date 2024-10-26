@@ -7,9 +7,9 @@
 :root {
     --darkest__blue: #030D32;
     --dark__blue: #144259;
-    --blue: #519E9F;
+    --blue: #519e9f;
     --light__blue: #CBE8E9;
-    --sand: #FFF5E5;
+    --sand: rgb(255, 245, 229);
     --white: #FDFFFE;
 }
 
@@ -22,5 +22,45 @@
     box-sizing: border-box;
     font-family: "EB Garamond", serif;
     scroll-behavior: smooth;
-    background-color: rgb(50, 137, 212);
+    background-color: var(--light__blue);
+}
+
+/* FAQs */
+
+.FAQs {
+    background-color: var(--light__blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FAQs > h2{
+    color: var(--dark__blue);
+    font-size: 3em;
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(81, 158, 159)' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 4.5a.5.5 0 01.8-.4L8 9.293l5.7-5.193a.5.5 0 11.6.8l-6 5.5a.5.5 0 01-.6 0l-6-5.5a.5.5 0 01-.2-.4z'/%3E%3C/svg%3E");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(255, 245, 229)' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 4.5a.5.5 0 01.8-.4L8 9.293l5.7-5.193a.5.5 0 11.6.8l-6 5.5a.5.5 0 01-.6 0l-6-5.5a.5.5 0 01-.2-.4z'/%3E%3C/svg%3E");
+}
+
+.accordion-body {
+    background-color: var(--white);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--light__blue);
+    background-color: var(--dark__blue);
+}
+
+.accordion-button {
+    color: var(--blue);
+    background-color: var(--sand);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: var(--blue);
 }
