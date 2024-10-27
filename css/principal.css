@@ -81,7 +81,7 @@ svg {
 
   /* INTRO */
 
-.introduction {
+  .introduction {
     background-color: var(--pink);
     height: 100vh;
 }
