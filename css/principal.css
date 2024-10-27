@@ -52,17 +52,29 @@ svg {
     margin: 0 5px;
 }
 
+    /* CARRUSEL */
 
+    
 .carousel-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    width: 30%; /* Use a percentage for responsiveness */
+    width: 20%; /* Use a percentage for responsiveness */
     max-width: 200px; /* Maximum width to keep it from getting too large */
     height: auto; /* Maintain aspect ratio */
     background: none;
+  }
+
+  img[src$="logo-neva_white.png"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Increase size */
+    max-width: 500px; /* Limit maximum size */
+    height: auto;
   }
   
   /* Adjust size for tablets */
@@ -70,6 +82,15 @@ svg {
     .carousel-overlay {
       width: 25%; /* Smaller percentage for tablets */
     }
+    img[src$="logo-neva_white.png"] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25%; /* Increase size */
+        max-width: 500px; /* Limit maximum size */
+        height: auto;
+      }
   }
   
   /* Adjust size for mobile devices */
@@ -77,6 +98,15 @@ svg {
     .carousel-overlay {
       width: 20%; /* Smaller percentage for mobile */
     }
+    img[src$="logo-neva_white.png"] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25%; /* Increase size */
+        max-width: 500px; /* Limit maximum size */
+        height: auto;
+      }
   }
 
   /* INTRO */
