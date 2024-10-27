@@ -10,9 +10,35 @@ $(document).ready(function() {
         
         if (scroll <= max_scroll) {
             let opacity = scroll / max_scroll;
-            $("#menu").css("background-color", "rgb(252, 182, 188, " + opacity + ")").css("box-shadow", "0 0 4px 2px rgba(0, 0, 0, 0.1)")
+            $("#menu").css("background-color", "rgb(250, 102, 116, " + opacity + ")").css("box-shadow", "0 0 4px 2px rgba(0, 0, 0, 0.1)")
         }
       });
+
+      $(window).on("scroll", function() {
+        scrollFunction();
+      });
+      
+      function scrollFunction() {
+        if ($(document).scrollTop() > 200) {
+          $(".nav-link").css({
+            color: "var(--white)",
+            transition: "500ms all"
+          });
+          // $(".navbar-brand > svg").css({
+          //   fill: "var(--white)",
+          //   transition: "500ms all"
+          // })
+        } else {
+          $(".nav-link").css({
+            color: "var(--dark__pink)",
+            transition: "500ms all"
+          });
+          // $(".navbar-brand > svg").css({
+          //   fill: "var(--dark__pink)",
+          //   transition: "500ms all"
+          // })
+        }
+      }
   });
 
 

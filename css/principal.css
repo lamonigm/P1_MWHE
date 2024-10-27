@@ -33,8 +33,8 @@ svg {
 
 .navbar {
     height: 10%;
-    padding: 0 0.6rem;
     backdrop-filter: blur(10px);
+    overflow: hidden;
 }
 
 .navbar-brand {
@@ -50,7 +50,12 @@ svg {
     color: var(--dark__pink);
     font-size: 1.2rem;
     margin: 0 5px;
+    transition: 0.3s;
 }
+/* 
+.nav-link:hover {
+    color: var(--caramel);
+} */
 
     /* CARRUSEL */
 
