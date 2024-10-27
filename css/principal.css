@@ -63,6 +63,7 @@ svg {
     width: 30%; /* Use a percentage for responsiveness */
     max-width: 200px; /* Maximum width to keep it from getting too large */
     height: auto; /* Maintain aspect ratio */
+    background: none;
   }
   
   /* Adjust size for tablets */
