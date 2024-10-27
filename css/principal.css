@@ -53,35 +53,29 @@ svg {
     margin: 0 5px;
 }
 
-/* Center and style the overlay */
+
 .carousel-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    width: 150px; /* Default width for larger screens */
+    width: 30%; /* Use a percentage for responsiveness */
+    max-width: 200px; /* Maximum width to keep it from getting too large */
     height: auto; /* Maintain aspect ratio */
   }
-
-
   
-  /* Adjust overlay size for tablets */
+  /* Adjust size for tablets */
   @media (max-width: 768px) {
     .carousel-overlay {
-      width: 100px;
+      width: 25%; /* Smaller percentage for tablets */
     }
   }
   
-  /* Adjust overlay size for mobile devices */
+  /* Adjust size for mobile devices */
   @media (max-width: 480px) {
     .carousel-overlay {
-      width: 80px;
+      width: 20%; /* Smaller percentage for mobile */
     }
   }
-  
-  /* Set a max height for images in carousel */
-  .carousel-item img {
-    max-height: 900px; /* Adjust as needed */
-    object-fit: cover; /* Maintain image aspect ratio within bounds */
-  }
+
