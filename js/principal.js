@@ -24,19 +24,19 @@ $(document).ready(function() {
             color: "var(--white)",
             transition: "500ms all"
           });
-          // $(".navbar-brand > svg").css({
-          //   fill: "var(--white)",
-          //   transition: "500ms all"
-          // })
+          $(".navbar-brand > svg").css({
+            fill: "var(--white)",
+            transition: "500ms all"
+          })
         } else {
           $(".nav-link").css({
             color: "var(--dark__pink)",
             transition: "500ms all"
           });
-          // $(".navbar-brand > svg").css({
-          //   fill: "var(--dark__pink)",
-          //   transition: "500ms all"
-          // })
+          $(".navbar-brand > svg").css({
+            fill: "var(--dark__pink)",
+            transition: "500ms all"
+          })
         }
       }
   });
