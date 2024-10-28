@@ -22,7 +22,6 @@
     box-sizing: border-box;
     font-family: "EB Garamond", serif;
     scroll-behavior: smooth;
-    background-color: var(--light__blue);
 }
 
 /* FAQs */
@@ -63,4 +62,27 @@
     z-index: 3;
     outline: 0;
     box-shadow: var(--blue);
+}
+
+  /* PROCESO COPYS */
+
+.proceso {
+    background-color: var(--light__blue);
+    height: 100vh;
+}
+
+/* .proceso__container {
+    background-color: var(--);
+} */
+
+.proceso__main-text {
+    color: var(--dark__blue);
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.bracket-icon {
+    width: 15em; /* Ajusta el tamaño según sea necesario */
+    height: auto;
 }

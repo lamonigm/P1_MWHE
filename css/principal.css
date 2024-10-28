@@ -129,7 +129,7 @@ svg {
 
   /* INTRO */
 
-  .introduction {
+.introduction {
     background-color: var(--pink);
     height: 100vh;
 }
@@ -140,13 +140,13 @@ svg {
 
 .introduction__main-text {
     color: var(--beige);
-    font-size: 1rem; /* Ajusta el tamaño del texto */
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 .bracket-icon {
-    width: 20em; /* Ajusta el tamaño según sea necesario */
+    width: 15em; /* Ajusta el tamaño según sea necesario */
     height: auto;
 }
 
@@ -158,6 +158,10 @@ svg {
 
 .trailer__container {
     background: none;
+}
+
+.trailer__content {
+    width: 100%;
 }
 
 .video-container {
@@ -186,7 +190,7 @@ svg {
 
 .text__main-text {
     color: var(--pink);
-    font-size: 1rem; /* Ajusta el tamaño del texto */
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
     margin-top: 2em;
     margin-bottom: 2em;
 }
