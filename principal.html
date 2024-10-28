@@ -96,9 +96,14 @@
             <div class="carousel__container" id="carousel-container">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="position: relative;">
   
-                    <!-- Overlay PNG Image -->
+                    <!-- PNG Image -->
+
                     <img src="Resources/img/logo-neva_white.png" alt="Overlay Logo" class="carousel-overlay">
-                  
+
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="center-center">
+               </div>                    
+                   
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -210,9 +215,75 @@
 
             </section>
 
-            <section class="gallery" id="gallery">
-
+            <section class="photo-gallery p-4">
+                <div class="container py-4">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="gallery-item" href="Resources/img/neva-bg.jpg">
+                            <img src="Resources/img/neva-bg.jpg" class="img-fluid" alt="Texto NEVA">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
+    
+            <div class="modal fade lightbox-modal" id="lightbox-modal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                    <div class="modal-content">
+                        <button type="button" class="btn-fullscreen-enlarge" aria-label="Enlarge fullscreen">
+                            <svg class="bi"><use href="#enlarge"></use></svg>
+                        </button>
+                        <button type="button" class="btn-fullscreen-exit d-none" aria-label="Exit fullscreen">
+                            <svg class="bi"><use href="#exit"></use></svg>
+                        </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <div class="lightbox-content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             <section class="presale" id="presale">
 
