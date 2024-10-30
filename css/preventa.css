@@ -22,5 +22,115 @@
     box-sizing: border-box;
     font-family: "EB Garamond", serif;
     scroll-behavior: smooth;
-    background-color: #ffefef;
+}
+
+.main {
+    background-image: url('../Resources/img/neva-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink);
+}
+
+/*------------ Login container ------------*/
+.box-area{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.582); /* Blanco semi-transparente */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/*------------ Right box ------------*/
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+.header-text{
+    color: var(--dark__pink);
+}
+/*------------ Custom Placeholder ------------*/
+
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
+    background-color: #fcb6bc61;
+    border: none;
+    color: var(--dark__pink);
+}
+
+/* Efecto hover para inputs y selects */
+.form-control {
+    transition: box-shadow 0.3s, border-color 0.3s; /* Suaviza la transición */
+}
+
+/* Efecto hover */
+.form-control:hover, 
+.form-control:focus {
+    box-shadow: 0 0 5px var(--pink), 0 0 10px var(--light__pink); /* Sombra al hacer hover */
+    border-color: var(--pink); /* Cambia el color del borde al hacer hover */
+}
+
+.form-control::placeholder {
+    color: var(--dark__pink); /* Cambia este valor al color que desees */
+    opacity: 1; /* Asegúrate de que el placeholder sea completamente visible */
+    font-size: 16px;
+}
+
+.form-control-lg:focus {
+    background-color: var(--light__pink);
+    border-color: var(--pink); 
+    box-shadow: 0 0 0 0.1rem var(--pink);
+}
+
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+.presale__btn {
+    margin-top: 1em;
+}
+
+.btn-presale {
+    background-color: var(--pink); /* Color de fondo inicial */
+    border: none; /* Elimina el borde del botón */
+    color: white; /* Ajusta el color del texto si es necesario */
+    transition: background-color 0.3s ease; /* Suaviza la transición del color de fondo */
+}
+
+.btn-presale:hover {
+    background-color: var(--caramel); /* Color de fondo al hacer hover */
+}
+
+.btn:focus-visible{
+    background-color: var(--caramel); /* Color de fondo al hacer hover */
+    border-color: var(--light__pink);
+}
+
+.btn:first-child:active {
+    background-color: var(--caramel); /* Color de fondo al hacer hover */
+    border-color: var(--light__pink);
+}
+
+
+
+
+
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px){
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
 }
