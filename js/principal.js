@@ -183,5 +183,58 @@ fsExit.addEventListener("click", (e) => {
 });
 
 
+// COUNTDOWN
+
+const SECOND = 1000;
+const MINUTE = 60 * SECOND;
+const HOUR = 60 * MINUTE;
+const DAY = 24 * HOUR;
+
+/** @param {number} future */
+
+const timestampDiff = future =>
+/** @param {number} past */
+past => {
+    const diff = future - past;
+
+    const days = Math.floor(diff / DAY);
+    const hours = Math.floor((diff % DAY) / HOUR);
+    const minutes = Math.floor((diff % HOUR) / MINUTE);
+    const seconds = Math.floor((diff % MINUTE) / SECOND);
+
+    return [days, hours, minutes, seconds];
+};
+
+/** @param {string} date */
+
+const countDown = date =>
+/** @param {HTMLElement} target */
+target => {
+    const diff = timestampDiff(Date.parse(date));
+
+    const intervalId = setInterval(() => {
+        const [days, hours, minutes, seconds] = diff(Date.now());
+
+        // Verifica si el tiempo es negativo, lo cual indica que la fecha ya pasó
+        if (days < 0 || hours < 0 || minutes < 0 || seconds < 0) {
+            target.innerHTML = "<div>Countdown finished!</div>";
+            clearInterval(intervalId);
+            return;
+        }
+
+        target.innerHTML = `
+          <div>${days}<span>Days</span></div>
+          <div>${hours}<span>Hours</span></div>
+          <div>${minutes}<span>Minutes</span></div>
+          <div>${seconds}<span>Seconds</span></div>
+        `;
+    }, SECOND);
+};
+
+const interval = countDown("November 26, 2024 06:55:00")(
+  document.querySelector("#countdown-container")
+);
+
+
 
 
