@@ -191,7 +191,16 @@ svg {
     margin-bottom: 2em;
 }
 
-
+.gallery-text__container {
+    color: var(--beige);
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+.photo-gallery {
+    background-color: #FA6674;
+}
 
 /* GALERÍA */
 
