@@ -506,7 +506,47 @@ svg {
 
 
 /* FOOTER*/
+svg {
+    max-height: 50px;
+    margin-bottom: 1rem;
+    fill: var(--dark__pink);
+    transition: 0.3s ease-in-out;
+}
+
+svg:hover {
+    fill: var(--beige);
+}
+
 footer {
+    background-image: linear-gradient(var(--light__pink), var(--pink));
+    color: var(--dark__pink);
+    box-shadow: -4px -5px 5px #519e9f1c;
+}
+
+.icons > i {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.icons > i:hover {
+    color: var(--beige);
+}
+
+footer a {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: var(--dark__blue);
+}
+
+#sp-link {
+    cursor: default;
+}
+
+footer a:hover:not(#sp-link) {
+    color: var(--beige);
+}
+
+/* footer {
     background-image: linear-gradient(var(--light__pink), var(--pink));
     width: 100%;
     padding: 1.5em 3em;
@@ -594,85 +634,3 @@ footer p {
     margin-bottom: 0;
 }
 /* MEDIA QUERIE TABLET 1000PX */
-@media only screen and (max-width: 1000px){
-        /* FOOTER */
-        footer {
-            height: 100%;
-            padding: 1.3rem 2.5rem;
-        }
-        
-        footer h2 {
-            font-size: 1.5rem;
-        }
-    
-        footer h3 {
-            font-size: 1rem;
-        }
-        
-        footer p {
-            font-size: 0.9rem;    
-        }
-    
-        footer a {
-            font-size: 0.9rem;
-        }
-        
-        #top {
-            margin-bottom: 2rem;
-        }
-    
-        .group > p {
-            text-align: start;
-        }
-    
-        #data > a > svg {
-            max-height: 40px;
-        }
-    
-        #data > p {
-            font-size: 0.8rem;
-        }
-        
-        #bottom {
-            font-size: 0.65em;
-            padding-top: 0.8em;
-        } 
-}
-@media only screen and (max-width: 600px) {
-    /* FOOTER */
-    footer {
-        padding: 1.3rem;
-    }
-    #top {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-    #links {
-        width: 100%;
-        justify-content: space-evenly;
-    }
-    .group {
-        align-items: center;
-        text-align: center;
-    }
-    .group > p {
-        text-align: center;
-    }
-    
-    #data {
-        align-items: center;
-        margin: 0.8rem 0;
-    }
-    #data > a {
-        font-size: 1.2rem;
-    }
-    #icons > i {
-        border: none;
-    }
-    #copyright {
-        font-size: 0.55em;
-        text-align: center;
-    }
-}
