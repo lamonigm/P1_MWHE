@@ -118,7 +118,30 @@
 }
 
 
+/* Personalización de colores */
+.modal-header, .modal-footer, .modal-body {
+    background-color: var(--beige); /* Cambia este color por el de tu elección */
+    color: var(--dark__pink);
+    border-top: none;
+}
 
+.modal-header{
+    border-bottom: var(--caramel) solid;
+}
+
+.modal-footer {
+    padding-top: 0em;
+}
+
+.btn-custom {
+    background-color: var(--caramel); /* Cambia este color por el de tu elección */
+    color: var(--beige);
+}
+
+.btn-custom:hover {
+    background-color: var(--dark__pink); /* Cambia este color por el de tu elección */
+    color: var(--beige);
+}
 
 
 /*------------ For small screens------------*/

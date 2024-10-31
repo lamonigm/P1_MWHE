@@ -152,6 +152,10 @@ svg {
     background: none;
 }
 
+.trailer__content {
+    width: 100%;
+}
+
 .video-container {
     border: 2px solid var(--beige);
     border-radius: 10px;
