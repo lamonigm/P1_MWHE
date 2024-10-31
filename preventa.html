@@ -57,25 +57,20 @@
                             </div>
         
                             <!-- Formulario en dos columnas -->
-                            <div class="row g-3"> <!-- Row para dos columnas -->
-                                <!-- Columna 1 -->
+                            <div class="row g-3" id="preorderForm">
                                 <div class="col-md-6">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control form-control-lg fs-6" placeholder="Nombre Completo">
+                                        <input type="text" id="nombreCompleto" class="form-control form-control-lg fs-6" placeholder="Nombre Completo" required>
                                     </div>
                                 </div>
-                            
-                                <!-- Columna 2 -->
                                 <div class="col-md-6">
                                     <div class="input-group mb-3">
-                                        <input type="email" class="form-control form-control-lg fs-6" placeholder="Correo Electrónico">
+                                        <input type="email" id="correoElectronico" class="form-control form-control-lg fs-6" placeholder="Correo Electrónico" required>
                                     </div>
                                 </div>
-                            
-                                <!-- Columna 1 -->
                                 <div class="col-md-6 mb-3">
                                     <div class="input-group">
-                                        <select class="form-control form-control-lg fs-6" name="platform" required>
+                                        <select class="form-control form-control-lg fs-6" id="platform" required>
                                             <option value="" disabled selected>Selecciona la plataforma</option>
                                             <option value="pc">PC</option>
                                             <option value="playstation">PlayStation</option>
@@ -84,11 +79,9 @@
                                         </select>
                                     </div>
                                 </div>
-                            
-                                <!-- Columna 2 -->
                                 <div class="col-md-6 mb-3">
                                     <div class="input-group">
-                                        <select class="form-control form-control-lg fs-6" name="payment-method" required>
+                                        <select class="form-control form-control-lg fs-6" id="paymentMethod" required>
                                             <option value="" disabled selected>Método de Pago</option>
                                             <option value="credit-card">Tarjeta de Crédito/Débito</option>
                                             <option value="paypal">PayPal</option>
@@ -97,17 +90,34 @@
                                 </div>
                             </div>
         
-       
-                            <!-- Botones de acción -->
+                            <!-- Botón de acción para abrir la modal -->
                             <div class="presale__btn col-12">
-                                <button type="button" class="btn btn-lg btn-primary btn-presale w-100 fs-6" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Preordenar</button>
+                                <button type="button" class="btn btn-lg btn-primary btn-presale w-100 fs-6" onclick="validateForm()">Preordenar</button>
                             </div>
-
+        
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmationModalLabel">Confirmación de Preorden</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ¡Gracias por tu interés en Neva! Tu preorden se ha registrado con éxito. Pronto recibirás un correo con más detalles.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
 
         <!-- FOOTER -->
