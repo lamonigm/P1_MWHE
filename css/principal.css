@@ -13,6 +13,8 @@
     --caramel: #F0BF87;
 }
 
+@import "bootstrap";
+
 /* SELECTORES GENERALES */
 
 * {
@@ -31,31 +33,21 @@ svg {
     vertical-align: middle
 }
 
-.navbar {
-    height: 10%;
-    backdrop-filter: blur(10px);
-    overflow: hidden;
-}
-
-.navbar-brand {
-    height: 100%;
-}
-
-.navbar-brand > svg{
-    max-height: 40px;
-    fill: var(--dark__pink);
+.sidebar {
+    background-color: var(--pink);
 }
 
 .nav-link {
     color: var(--dark__pink);
-    font-size: 1.2rem;
-    margin: 0 5px;
-    transition: 0.3s;
 }
-/* 
-.nav-link:hover {
-    color: var(--caramel);
-} */
+
+.custom__color {
+    color: var(--dark__pink);
+}
+
+.navbar-toggler-icon {
+    color: var(--dark__pink);
+}
 
  /* CARRUSEL */
 
