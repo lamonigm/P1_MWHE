@@ -166,7 +166,13 @@ footer {
     box-shadow: -4px -5px 5px #519e9f1c;
 }
 
-/* svg {
+footer > a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+svg {
     max-height: 50px;
     margin-bottom: 1rem;
     fill: var(--dark__blue);
@@ -175,7 +181,7 @@ footer {
 
 svg:hover {
     fill: var(--sand);
-} */
+}
 
 .icons > i {
     transition: 0.3s ease-in-out;
