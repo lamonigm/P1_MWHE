@@ -24,6 +24,34 @@
     scroll-behavior: smooth;
 }
 
+/* MENÚ*/
+
+svg {
+    width: 100%;
+    height: auto;
+    vertical-align: middle
+}
+
+.sidebar {
+    background-color: var(--blue);
+}
+
+.offcanvas-title > svg {
+    fill: var(--white);
+}
+
+.nav-link {
+    color: var(--dark__blue);
+}
+
+.custom__color {
+    color: var(--dark__blue);
+}
+
+.navbar-toggler-icon {
+    color: var(--dark__blue);
+}
+
 /* CARRUSEL */
 
     
