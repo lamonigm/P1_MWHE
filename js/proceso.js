@@ -44,3 +44,12 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init();
 });
+
+$(".facts-carousel").flickity({
+  // options
+  cellAlign: "center",
+  contain: true,
+  wrapAround: true,
+  draggable: ">1",
+  autoPlay: true,
+});

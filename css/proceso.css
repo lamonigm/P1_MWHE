@@ -122,6 +122,49 @@ svg {
       }
   }
 
+/* CARROUSEL CARDS */
+
+.cards__container {
+    background-color: var(--light__blue);
+    padding-top: 2rem;
+}
+
+.carousel-cell {
+    margin: 1rem;
+}
+
+.card {
+    background-color: var(--white);
+    color: var(--dark__blue);
+    box-shadow: 0 2px 5px #030d3225;
+    border-radius: 1rem;
+}
+
+.card-img-top {
+    border-radius: 1rem;
+}
+
+.flickity-prev-next-button {
+    background-color: #cbe8e983;
+    transition: 0.3s ease-in-out;
+}
+
+.flickity-button-icon {
+    transition: 0.3s ease-in-out;
+    color: var(--white);
+}
+
+.flickity-prev-next-button:hover {
+    background-color: var(--darkest__blue);
+}
+
+.flickity-prev-next-button:hover > .flickity-button-icon {
+    color: var(--sand);
+}
+
+.dot.is-selected {
+    background-color: var(--sand);
+}
 
 /* FAQs */
 
