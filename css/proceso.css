@@ -317,3 +317,7 @@ footer a {
 footer a:hover:not(#sp-link) {
     color: var(--sand);
 }
+
+.custom-bg {
+    background-color: var(--light__blue); 
+}
