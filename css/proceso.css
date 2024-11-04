@@ -125,7 +125,7 @@ svg {
 /* CARROUSEL CARDS */
 
 .cards__container {
-    background-color: var(--light__blue);
+    background-color: var(--darkest__blue);
     padding-top: 2rem;
 }
 
@@ -170,7 +170,7 @@ svg {
 /* FAQs */
 
 .FAQs {
-    background-color: var(--light__blue);
+    background-color: var(--darkest__blue);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ svg {
   /* PROCESO COPYS */
 
 .proceso {
-    background-color: var(--light__blue);
+    background-color: var(--darkest__blue);
     height: 100vh;
 }
 
@@ -219,7 +219,7 @@ svg {
 } */
 
 .proceso__main-text {
-    color: var(--dark__blue);
+    color: var(--light__blue);
     font-size: 1.2rem; /* Ajusta el tamaño del texto */
     margin-top: 2em;
     margin-bottom: 2em;
@@ -233,7 +233,7 @@ svg {
 /* CONSOLAS DISPONIBLES */
 
 .consolas {
-    background-color: var(--light__blue);
+    background-color: var(--darkest__blue);
     padding: 2rem;
 }
 
@@ -319,5 +319,5 @@ footer a:hover:not(#sp-link) {
 }
 
 .custom-bg {
-    background-color: var(--light__blue); 
+    background-color: var(--darkest__blue); 
 }

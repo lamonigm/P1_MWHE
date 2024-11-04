@@ -546,3 +546,19 @@ footer a:hover:not(#sp-link) {
     color: var(--beige);
 }
 
+.gallery__text {
+    background-color:#FA6674; 
+}
+
+.gallery__text, .gallery-text__container, .row {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
