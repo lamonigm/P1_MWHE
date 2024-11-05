@@ -1,7 +1,9 @@
-
 /* <!-- GOOGLE FONTS------ --> */
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* BOOTSTRAP */
+@import "bootstrap";
 
 /* VARIABLES DE COLORES */
 :root {
@@ -148,14 +150,18 @@ svg {
 }
 
 .card__facts {
-    background-color: var(--white);
-    color: var(--dark__blue);
+    background-color: var(--dark__blue);
+    color: var(--light__blue);
     box-shadow: 0 2px 5px #030d3225;
     border-radius: 1rem;
 }
 
 .card-img-top {
     border-radius: 1rem;
+}
+
+.card__facts .card-title {
+    font-family: 'Inter', sans-serif;
 }
 
 .flickity-prev-next-button {
@@ -260,12 +266,15 @@ svg {
 }
 
 .card__platforms {
-    background-color: var(--darkest__blue);
+    background-color: var(--dark__blue);
     color: var(--light__blue);
     box-shadow: 0 2px 5px #030d3225;
     border-radius: 1rem;
     margin: 1rem;
     transition: 0.3s ease-in-out;
+}
+.card__platforms .card-title {
+    margin-bottom: 1.5rem;
 }
 
 .card__platforms:hover {
@@ -280,8 +289,8 @@ svg {
     color: var(--light__blue);
     background-color: var(--blue);
     font-size: 1.2rem;
-    margin-top: 0.5rem;
-    padding: 0.2rem 0.5rem;
+    padding: 0.4rem 0.7rem;
+    font-family: 'Inter', sans-serif;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s ease-in-out;

@@ -40,6 +40,7 @@ svg {
     color: var(--dark__pink);
     position: relative;
     transition: color 500ms;
+    font-family: 'Inter', sans-serif;
 }
 
 .nav-link::after {
@@ -582,6 +583,10 @@ footer {
     background-image: linear-gradient(var(--light__pink), var(--pink));
     color: var(--dark__pink);
     box-shadow: -4px -5px 5px #519e9f1c;
+}
+
+footer h3 {
+    font-family: 'Inter', sans-serif;
 }
 
 .icons > i {
