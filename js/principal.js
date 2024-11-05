@@ -24,10 +24,28 @@ $(document).ready(function() {
             color: "var(--white)",
             transition: "500ms all"
           });
+          $(".nav-link:hover").css({
+            color: "var(--light__pink)",
+            transition: "500ms all"
+          });
           $(".navbar-brand > svg").css({
             fill: "var(--white)",
             transition: "500ms all"
           })
+          $(".blur").css({
+            "position": "absolute",
+            "top": "0",
+            "left": "0",
+            "width": "100%",
+            "height": "100%",
+            "background-color": "#fbe9cb45",
+            "z-index": "-1",
+            "backdrop-filter": "blur(5px)",
+            "-webkit-backdrop-filter": "blur(5px)",
+            "opacity": "0", 
+            "transition": "opacity 500ms",
+          });
+          
         } else {
           $(".nav-link").css({
             color: "var(--dark__pink)",
@@ -36,6 +54,18 @@ $(document).ready(function() {
           $(".navbar-brand > svg").css({
             fill: "var(--dark__pink)",
             transition: "500ms all"
+          })
+          $(".blur").css({
+            "position": "absolute",
+            "top": "0",
+            "left": "0",
+            "width": "100%",
+            "height": "100%",
+            "background-color": "#fbe9cb45",
+            "z-index": "-1",
+            "backdrop-filter": "blur(5px)",
+            "-webkit-backdrop-filter": "blur(5px)",
+            "opacity": "1",
           })
         }
       }

@@ -15,30 +15,16 @@ $(document).ready(function() {
       });
 
       $(window).on("scroll", function() {
-        scrollFunction();
-      });
-      
-      function scrollFunction() {
-        if ($(document).scrollTop() > 200) {
+        if ($(document).scrollTop() < 100) {
           $(".nav-link").css({
-            color: "var(--white)",
-            transition: "500ms all"
+            textShadow: "0px 0px 5px var(--darkest__blue)" // Aplica el text-shadow
           });
-          $(".navbar-brand > svg").css({
-            fill: "var(--white)",
-            transition: "500ms all"
-          })
         } else {
           $(".nav-link").css({
-            color: "var(--dark__blue)",
-            transition: "500ms all"
+            textShadow: "none" // Elimina el text-shadow
           });
-          $(".navbar-brand > svg").css({
-            fill: "var(--dark__blue)",
-            transition: "500ms all"
-          })
         }
-    }
+      });
 });
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -24,24 +24,38 @@
     scroll-behavior: smooth;
 }
 
-/* MENÚ*/
-
 svg {
     width: 100%;
     height: auto;
-    vertical-align: middle
+    vertical-align: middle;
+    max-height: 50px;
+    margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
 }
+
+/* MENÚ*/
 
 .sidebar {
     background-color: var(--blue);
 }
 
-.offcanvas-title > svg {
+.offcanvas-title > svg, .navbar-brand > svg {
     fill: var(--white);
 }
 
+.navbar-brand > svg:hover {
+    fill: var(--blue);
+}
+
 .nav-link {
-    color: var(--dark__blue);
+    color: var(--white);
+    text-shadow: 0px 0px 5px var(--dark__blue);
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--blue);
+    text-shadow: none;
 }
 
 .custom__color {
@@ -292,14 +306,11 @@ footer > a {
     display: flex;
 }
 
-svg {
-    max-height: 50px;
-    margin-bottom: 1rem;
+footer svg {
     fill: var(--dark__blue);
-    transition: 0.3s ease-in-out;
 }
 
-svg:hover {
+footer svg:hover {
     fill: var(--sand);
 }
 

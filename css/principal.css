@@ -30,11 +30,36 @@
 svg {
     width: 100%;
     height: auto;
-    vertical-align: middle
+    vertical-align: middle;
+    max-height: 50px;
+    margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
 }
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fbe9cb45;
+    z-index: -1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
+} 
+
 
 .sidebar {
     background-color: var(--pink);
+}
+
+.navbar-brand > svg {
+    fill: var(--dark__pink);
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-brand > svg:hover {
+    fill: var(--pink);
 }
 
 .offcanvas-title > svg {
@@ -45,12 +70,8 @@ svg {
     color: var(--dark__pink);
 }
 
-.custom__color {
-    color: var(--dark__pink);
-}
-
-.navbar-toggler-icon {
-    color: var(--dark__pink);
+.nav-link:hover {
+    color: var(--pink);
 }
 
  /* CARRUSEL */
@@ -506,14 +527,11 @@ svg {
 
 
 /* FOOTER*/
-svg {
-    max-height: 50px;
-    margin-bottom: 1rem;
+footer svg {
     fill: var(--dark__pink);
-    transition: 0.3s ease-in-out;
 }
 
-svg:hover {
+footer svg:hover {
     fill: var(--beige);
 }
 
@@ -562,3 +580,8 @@ footer a:hover:not(#sp-link) {
     padding-top: 100px;
 }
 
+@media only screen and (max-width: 992px) {
+    .nav-link {
+        color: var(--white);
+    }
+}
