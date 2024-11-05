@@ -1,7 +1,9 @@
-
 /* <!-- GOOGLE FONTS------ --> */
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* BOOTSTRAP */
+@import "bootstrap";
 
 /* VARIABLES DE COLORES */
 :root {
@@ -12,8 +14,6 @@
     --beige: #FBE9CB;
     --caramel: #F0BF87;
 }
-
-@import "bootstrap";
 
 /* SELECTORES GENERALES */
 
@@ -36,10 +36,30 @@ svg {
     transition: 0.3s ease-in-out;
 }
 
-
 .nav-link {
     color: var(--dark__pink);
+    position: relative;
     transition: color 500ms;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 0; 
+    height: 1px; 
+    background-color: var(--pink);
+    transition: width 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: var(--pink);
+}
+
+.nav-link:hover::after {
+    width: 100%; 
 }
 
 .navbar-brand > svg {
@@ -47,16 +67,27 @@ svg {
     transition: fill 500ms;
 }
 
-/* Estado del navbar al hacer scroll (cambia color de enlaces y SVG) */
 .scrolled .nav-link {
     color: var(--white);
 }
 
-.scrolled .navbar-brand > svg {
-    fill: var(--white);
+.scrolled .nav-link:hover {
+    color: var(--dark__pink);
 }
 
-/* Efecto de opacidad en el fondo de blur cuando hacemos scroll */
+.scrolled .navbar-brand > svg {
+    fill: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.scrolled .nav-link::after {
+    background-color: var(--dark__pink);
+}
+
+.scrolled .navbar-brand > svg:hover {
+    fill: var(--dark__pink);
+}
+
 .blur {
     position: absolute;
     top: 0;
@@ -74,28 +105,9 @@ svg {
     opacity: 0;
 }
 
-
-
-/* .blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fbe9cb45;
-    z-index: -1;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); 
-}  */
-
 .sidebar {
     background-color: var(--pink);
 }
-
-/* .navbar-brand > svg {
-    fill: var(--dark__pink);
-    transition: 0.3s ease-in-out;
-} */
 
 .navbar-brand > svg:hover {
     fill: var(--pink);
@@ -103,14 +115,6 @@ svg {
 
 .offcanvas-title > svg {
     fill: var(--white);
-}
-
-/* .nav-link {
-    color: var(--dark__pink);
-} */
-
-.nav-link:hover {
-    color: var(--light__pink);
 }
 
  /* CARRUSEL */
