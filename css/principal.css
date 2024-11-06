@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
-/* BOOTSTRAP */
-@import "bootstrap";
-
 /* VARIABLES DE COLORES */
 :root {
     --dark__pink: #B74140;
@@ -591,6 +588,32 @@ svg {
     padding-top: 100px;
 }
 
+/* PRESALE BUTTON */
+
+.presale {
+    background-color: var(--beige);
+}
+.presale__btn {
+    margin: 1rem 2rem 2rem 2rem;
+}
+
+.presale__link {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--pink);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.presale__link:hover {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--white);
+    color: var(--pink);
+    box-shadow: #fcb6bc 0 0 3px 3px;
+}
 
 /* FOOTER*/
 
