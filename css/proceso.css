@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
-/* BOOTSTRAP */
-@import "bootstrap";
 
 /* VARIABLES DE COLORES */
 :root {
@@ -238,11 +236,18 @@ svg {
     padding-top: 2rem;
 }
 
+.cards__container > h2 {
+    color: var(--blue);
+    font-size: 3em;
+    font-family: 'Inter', sans-serif;
+}
+
 .carousel-cell {
     margin: 1rem;
 }
 
 .card__facts {
+    width: 25rem;
     background-color: var(--dark__blue);
     color: var(--light__blue);
     box-shadow: 0 2px 5px #030d3225;
@@ -277,6 +282,11 @@ svg {
 
 .dot.is-selected {
     background-color: var(--sand);
+}
+
+.gallery > .row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -350,6 +360,40 @@ svg {
 .bracket-icon {
     width: 15em;
     height: auto;
+}
+
+/* PRESALE BUTTON */
+
+.presale {
+    background-color: var(--darkest__blue);
+}
+
+.presale p {
+    margin-top: 2rem;
+    color: var(--light__blue);
+    font-size: 1.1rem;
+}
+
+.presale__btn {
+    margin: 1rem 2rem 2rem 2rem;
+}
+
+.presale__link {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--blue);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.presale__link:hover {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--light__blue);
+    color: var(--dark__blue);
+    box-shadow: #519e9f67 0 0 3px 3px;
 }
 
 /* CONSOLAS DISPONIBLES */
@@ -442,4 +486,15 @@ footer a:hover:not(#sp-link) {
 
 .custom-bg {
     background-color: var(--darkest__blue); 
+}
+
+@media only screen and (max-width: 440px) {
+    .card__facts {
+        width: 90%;
+    }
+
+    .carousel-cell {
+        display: flex;
+        justify-content: center;
+    }
 }
