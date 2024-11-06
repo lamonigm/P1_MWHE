@@ -24,6 +24,78 @@
     scroll-behavior: smooth;
 }
 
+/* MENÚ*/
+
+svg {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    max-height: 50px;
+    margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: var(--dark__pink);
+    position: relative;
+    transition: color 500ms;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -1px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 0; 
+    height: 1px; 
+    background-color: var(--pink);
+    transition: width 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: var(--pink);
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+.navbar-brand > svg {
+    fill: var(--dark__pink);
+    transition: fill 500ms;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fbe9cb45;
+    z-index: -1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: opacity 500ms;
+}
+
+.blur-hidden {
+    opacity: 0;
+}
+
+.sidebar {
+    background-color: var(--pink);
+}
+
+.navbar-brand > svg:hover {
+    fill: var(--pink);
+}
+
+.offcanvas-title > svg {
+    fill: var(--white);
+}
+
 .main {
     background-image: url('../Resources/img/neva-bg.jpg');
     background-size: cover;
@@ -145,6 +217,16 @@
 
 
 /*------------ For small screens------------*/
+@media only screen and (max-width: 992px) {
+    .nav-link {
+        color: var(--white);
+    }
+
+    .nav-link:hover {
+        color: var(--dark__pink);
+    }
+}
+
 @media only screen and (max-width: 768px){
      .box-area{
         margin: 0 10px;

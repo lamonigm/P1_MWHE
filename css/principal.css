@@ -68,6 +68,14 @@ svg {
     transition: fill 500ms;
 }
 
+.menu__btn {
+    background-color: var(--pink);
+    color: white;
+    border-radius: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .scrolled .nav-link {
     color: var(--white);
 }
@@ -567,51 +575,6 @@ svg {
     fill: currentcolor;
 }
 
-
-
-
-/* FOOTER*/
-footer svg {
-    fill: var(--dark__pink);
-}
-
-footer svg:hover {
-    fill: var(--beige);
-}
-
-footer {
-    background-image: linear-gradient(var(--light__pink), var(--pink));
-    color: var(--dark__pink);
-    box-shadow: -4px -5px 5px #519e9f1c;
-}
-
-footer h3 {
-    font-family: 'Inter', sans-serif;
-}
-
-.icons > i {
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.icons > i:hover {
-    color: var(--beige);
-}
-
-footer a {
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    color: var(--dark__blue);
-}
-
-#sp-link {
-    cursor: default;
-}
-
-footer a:hover:not(#sp-link) {
-    color: var(--beige);
-}
-
 .gallery__text {
     background-color:#FA6674; 
 }
@@ -626,6 +589,50 @@ footer a:hover:not(#sp-link) {
     justify-content: center;
     align-items: center;
     padding-top: 100px;
+}
+
+
+/* FOOTER*/
+
+footer svg {
+    fill: var(--dark__pink);
+}
+
+footer svg:hover {
+    fill: var(--pink);
+}
+
+footer {
+    background-color: var(--light__pink);
+    color: var(--dark__pink);
+    box-shadow: -4px -5px 5px #519e9f1c;
+}
+
+footer h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+.icons > i {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.icons > i:hover {
+    color: var(--pink);
+}
+
+footer a {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: var(--dark__pink);
+}
+
+#sp-link {
+    cursor: default;
+}
+
+footer a:hover:not(#sp-link) {
+    color: var(--pink);
 }
 
 @media only screen and (max-width: 992px) {
