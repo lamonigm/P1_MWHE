@@ -108,15 +108,15 @@ svg {
     background-color: var(--pink);
 }
 
-/*------------ Login container ------------*/
+
 .box-area{
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.582); /* Blanco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.582);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-/*------------ Right box ------------*/
+
 .right-box{
     padding: 40px 30px 40px 40px;
 }
@@ -124,7 +124,10 @@ svg {
 .header-text{
     color: var(--dark__pink);
 }
-/*------------ Custom Placeholder ------------*/
+
+.header-text > h2{
+    font-family: 'Inter', sans-serif;
+}
 
 .input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
     background-color: #fcb6bc61;
@@ -132,21 +135,20 @@ svg {
     color: var(--dark__pink);
 }
 
-/* Efecto hover para inputs y selects */
 .form-control {
-    transition: box-shadow 0.3s, border-color 0.3s; /* Suaviza la transición */
+    transition: box-shadow 0.3s, border-color 0.3s;
 }
 
 /* Efecto hover */
 .form-control:hover, 
 .form-control:focus {
-    box-shadow: 0 0 5px var(--pink), 0 0 10px var(--light__pink); /* Sombra al hacer hover */
-    border-color: var(--pink); /* Cambia el color del borde al hacer hover */
+    box-shadow: 0 0 5px var(--pink), 0 0 10px var(--light__pink); 
+    border-color: var(--pink); 
 }
 
 .form-control::placeholder {
-    color: var(--dark__pink); /* Cambia este valor al color que desees */
-    opacity: 1; /* Asegúrate de que el placeholder sea completamente visible */
+    color: var(--dark__pink);
+    opacity: 1;
     font-size: 16px;
 }
 
@@ -155,7 +157,6 @@ svg {
     border-color: var(--pink); 
     box-shadow: 0 0 0 0.1rem var(--pink);
 }
-
 
 .rounded-4{
     border-radius: 20px;
@@ -169,30 +170,28 @@ svg {
 }
 
 .btn-presale {
-    background-color: var(--pink); /* Color de fondo inicial */
-    border: none; /* Elimina el borde del botón */
-    color: white; /* Ajusta el color del texto si es necesario */
-    transition: background-color 0.3s ease; /* Suaviza la transición del color de fondo */
+    background-color: var(--pink);
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
 .btn-presale:hover {
-    background-color: var(--caramel); /* Color de fondo al hacer hover */
+    background-color: var(--caramel);
 }
 
 .btn:focus-visible{
-    background-color: var(--caramel); /* Color de fondo al hacer hover */
+    background-color: var(--caramel);
     border-color: var(--light__pink);
 }
 
 .btn:first-child:active {
-    background-color: var(--caramel); /* Color de fondo al hacer hover */
+    background-color: var(--caramel);
     border-color: var(--light__pink);
 }
 
-
-/* Personalización de colores */
 .modal-header, .modal-footer, .modal-body {
-    background-color: var(--beige); /* Cambia este color por el de tu elección */
+    background-color: var(--beige); 
     color: var(--dark__pink);
     border-top: none;
 }
@@ -206,12 +205,12 @@ svg {
 }
 
 .btn-custom {
-    background-color: var(--caramel); /* Cambia este color por el de tu elección */
+    background-color: var(--caramel); 
     color: var(--beige);
 }
 
 .btn-custom:hover {
-    background-color: var(--dark__pink); /* Cambia este color por el de tu elección */
+    background-color: var(--dark__pink); 
     color: var(--beige);
 }
 
