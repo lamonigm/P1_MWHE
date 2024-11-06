@@ -293,6 +293,7 @@ svg {
 .FAQs > h2{
     color: var(--blue);
     font-size: 3em;
+    font-family: 'Inter', sans-serif;
 }
 
 .accordion {
@@ -316,6 +317,10 @@ svg {
     background-color: var(--sand);
 }
 
+.accordion-header{
+    font-family: 'Inter', sans-serif;
+}
+
 .accordion-button:hover {
     color: var(--sand);
     background-color: var(--blue);
@@ -335,19 +340,15 @@ svg {
     height: 100vh;
 }
 
-/* .proceso__container {
-    background-color: var(--);
-} */
-
 .proceso__main-text {
     color: var(--light__blue);
-    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    font-size: 1rem;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 .bracket-icon {
-    width: 15em; /* Ajusta el tamaño según sea necesario */
+    width: 15em;
     height: auto;
 }
 

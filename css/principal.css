@@ -209,13 +209,13 @@ svg {
 
 .introduction__main-text {
     color: var(--beige);
-    font-size: 1rem; /* Ajusta el tamaño del texto */
+    font-size: 1rem;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 .bracket-icon {
-    width: 20em; /* Ajusta el tamaño según sea necesario */
+    width: 20em;
     height: auto;
 }
 
@@ -243,9 +243,9 @@ svg {
 }
 
 .video-container iframe {
-    width: 100%;                       /* Ancho completo */
-    height: 450px;                    /* Altura fija */
-    display: block;                   /* Asegura que el iframe se comporte como un bloque */
+    width: 100%;
+    height: 450px;
+    display: block;
 }
 
 .text {
@@ -259,7 +259,7 @@ svg {
 
 .text__main-text {
     color: var(--pink);
-    font-size: 1rem; /* Ajusta el tamaño del texto */
+    font-size: 1rem;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -273,14 +273,14 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px; /* Ajusta la separación horizontal entre los círculos */
+    gap: 50px;
 }
 
 #countdown-container {
     font-size: 50px;
     color: var(--dark__pink);
     display: flex;
-    gap: 40px; /* Ajusta la separación entre los círculos en el contenedor */
+    gap: 40px;
 }
 
 #countdown-container div {
@@ -294,12 +294,12 @@ svg {
     border-radius: 50%;
     background-color: var(--light__pink);
     text-align: center;
-    margin-bottom: 10px; /* Añade un pequeño margen inferior */
+    margin-bottom: 10px;
 }
 
 #countdown-container div span {
     position: absolute;
-    bottom: -40px; /* Ajusta la posición para acercarlo al círculo */
+    bottom: -40px;
     font-size: 0.45em;
     text-align: center;
     color: var(--dark__pink);
@@ -324,7 +324,7 @@ svg {
 
 .gallery-text__container {
     color: var(--beige);
-    font-size: 1rem; /* Ajusta el tamaño del texto */
+    font-size: 1rem;
     margin-top: 2em;
     margin-bottom: 2em;
     
