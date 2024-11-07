@@ -228,7 +228,7 @@ svg {
 
 @media only screen and (max-width: 768px){
      .box-area{
-        margin: 0 10px;
+        margin: 100px 10px 10px 10px;
      }
      .left-box{
         height: 100px;
