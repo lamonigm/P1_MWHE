@@ -1,4 +1,4 @@
-/* <!-- GOOGLE FONTS------ --> */
+/* <!-- GOOGLE FONTS --> */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
@@ -127,37 +127,6 @@ svg {
 .offcanvas-title > svg {
     fill: var(--white);
 }
-
-/* .sidebar {
-    background-color: var(--blue);
-}
-
-.offcanvas-title > svg, .navbar-brand > svg {
-    fill: var(--white);
-}
-
-.navbar-brand > svg:hover {
-    fill: var(--blue);
-}
-
-.nav-link {
-    color: var(--white);
-    text-shadow: 0px 0px 5px var(--dark__blue);
-    transition: 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-    color: var(--blue);
-    text-shadow: none;
-}
-
-.custom__color {
-    color: var(--dark__blue);
-}
-
-.navbar-toggler-icon {
-    color: var(--dark__blue);
-} */
 
 /* CARRUSEL */
 
@@ -473,6 +442,10 @@ footer a {
     transition: 0.3s ease-in-out;
     cursor: pointer;
     color: var(--light__blue);
+}
+
+footer h3 {
+    font-family: 'Inter', sans-serif;
 }
 
 #sp-link {
