@@ -125,7 +125,6 @@ svg {
 
  /* CARRUSEL */
 
-    
 .carousel-overlay {
     position: absolute;
     top: 50%;
@@ -136,7 +135,6 @@ svg {
     max-width: 20px; 
     height: auto; 
     background: none;
-   
   }
 
   img[src$="logo-neva_white.png"] {
@@ -151,7 +149,6 @@ svg {
 
   .carousel-item img {
     width: 100%;
- 
     object-fit: cover; 
 }
 
@@ -193,9 +190,9 @@ svg {
       }
   }
 
-  /* INTRO */
+  /* INTRO Y VIDEO */
 
-  .introduction {
+.introduction {
     background-color: var(--pink);
     height: 100vh;
 }
@@ -448,10 +445,6 @@ svg {
     vertical-align: -0.035em;
     fill: currentcolor;
 }
-
-
-
-
 
 /* GALERÍA */
 

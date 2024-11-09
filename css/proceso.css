@@ -35,8 +35,6 @@ svg {
 
 /* MENÚ*/
 
-/* MENÚ*/
-
 svg {
     width: 100%;
     height: auto;
@@ -197,7 +195,6 @@ svg {
     }
 }
   
-  /* Adjust size for tablets */
   @media (max-width: 768px) {
     .carousel-overlay {
       width: 25%; 
@@ -213,7 +210,6 @@ svg {
       }
   }
   
-  /* Adjust size for mobile devices */
   @media (max-width: 480px) {
     .carousel-overlay {
       width: 20%; 
@@ -339,7 +335,7 @@ svg {
 .accordion-button:focus {
     z-index: 3;
     outline: 0;
-    box-shadow: var(--blue);
+    box-shadow: 0 0 10px var(--blue);
 }
 
   /* PROCESO COPYS */
