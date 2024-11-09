@@ -44,6 +44,7 @@ svg {
     transition: 0.3s ease-in-out;
 }
 
+
 .nav-link {
     color: var(--white);
     position: relative;
@@ -249,10 +250,10 @@ svg {
     background-color: var(--sand);
 }
 
-/* .gallery > .row {
+.gallery > .row {
     margin-left: 0;
     margin-right: 0;
-} */
+}
 
 /* FAQs */
 
