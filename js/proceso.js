@@ -19,7 +19,8 @@ $(document).ready(function() {
       function scrollFunction() {
           if ($(document).scrollTop() > 200) {
               $("#menu").addClass("scrolled");         
-              $(".blur").addClass("blur-hidden");     
+              $(".blur").addClass("blur-hidden");   
+          } else { 
               $("#menu").removeClass("scrolled");     
               $(".blur").removeClass("blur-hidden");  
           }
