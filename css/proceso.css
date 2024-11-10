@@ -127,8 +127,8 @@ svg {
     fill: var(--white);
 }
 
-/* CARRUSEL */
 
+/* CARRUSEL */
     
 .carousel-overlay {
     position: absolute;
@@ -250,11 +250,12 @@ svg {
     background-color: var(--sand);
 }
 
-.gallery > .row {
-    margin-left: 0;
-    margin-right: 0;
-}
+/* GALERIA */
 
+.custom-bg {
+    background-color: var(--darkest__blue); 
+    padding: 20px; 
+}
 /* FAQs */
 
 .FAQs {

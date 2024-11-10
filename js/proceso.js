@@ -18,11 +18,10 @@ $(document).ready(function() {
       
       function scrollFunction() {
           if ($(document).scrollTop() > 200) {
-              $("#menu").addClass("scrolled");         // Añade clase para cambiar colores en navbar
-              $(".blur").addClass("blur-hidden");     // Añade clase para ocultar el blur
-          } else {
-              $("#menu").removeClass("scrolled");     // Quita clase para restaurar colores originales
-              $(".blur").removeClass("blur-hidden");  // Quita clase para restaurar el blur
+              $("#menu").addClass("scrolled");         
+              $(".blur").addClass("blur-hidden");     
+              $("#menu").removeClass("scrolled");     
+              $(".blur").removeClass("blur-hidden");  
           }
       }
 });
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 $(".facts-carousel").flickity({
-  // options
   cellAlign: "center",
   contain: true,
   wrapAround: true,

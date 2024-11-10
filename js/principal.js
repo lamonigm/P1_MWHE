@@ -20,11 +20,11 @@ $(document).ready(function() {
       
       function scrollFunction() {
           if ($(document).scrollTop() > 200) {
-              $("#menu").addClass("scrolled");         // Añade clase para cambiar colores en navbar
-              $(".blur").addClass("blur-hidden");     // Añade clase para ocultar el blur
+              $("#menu").addClass("scrolled");         
+              $(".blur").addClass("blur-hidden");     
           } else {
-              $("#menu").removeClass("scrolled");     // Quita clase para restaurar colores originales
-              $(".blur").removeClass("blur-hidden");  // Quita clase para restaurar el blur
+              $("#menu").removeClass("scrolled");     
+              $(".blur").removeClass("blur-hidden"); 
           }
       }
   });
@@ -139,7 +139,6 @@ for (const link of links) {
     });
 }
 
-// --- Support Fullscreen
 const fsEnlarge = document.querySelector(".btn-fullscreen-enlarge");
 const fsExit = document.querySelector(".btn-fullscreen-exit");
 
@@ -203,7 +202,6 @@ target => {
     const intervalId = setInterval(() => {
         const [days, hours, minutes, seconds] = diff(Date.now());
 
-        // Verifica si el tiempo es negativo, lo cual indica que la fecha ya pasó
         if (days < 0 || hours < 0 || minutes < 0 || seconds < 0) {
             target.innerHTML = "<div>Countdown finished!</div>";
             clearInterval(intervalId);

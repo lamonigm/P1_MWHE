@@ -159,7 +159,6 @@ svg {
     }
 }
   
-  /* Adjust size for tablets */
   @media (max-width: 768px) {
     .carousel-overlay {
       width: 25%; 
@@ -175,7 +174,6 @@ svg {
       }
   }
   
-  /* Adjust size for mobile devices */
   @media (max-width: 480px) {
     .carousel-overlay {
       width: 20%; 
